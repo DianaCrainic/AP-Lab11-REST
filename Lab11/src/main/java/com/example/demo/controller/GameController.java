@@ -8,6 +8,14 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * GameController: a REST controller containing methods for:
+ * obtaining the list of the games, via a HTTP GET request.
+ * adding a new game in the database, via a HTTP POST request.
+ * modifying the name of a game, via a HTTP PUT request.
+ * deleting a game, via a HTTP DELETE request.
+ */
+
 @RestController
 @RequestMapping("games")
 public class GameController {

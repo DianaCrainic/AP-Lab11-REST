@@ -5,12 +5,11 @@ import com.example.demo.controller.PlayerController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * main Application
+ */
 @SpringBootApplication
 public class Application {
-
-	public void PlayerRequests(){
-
-	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);

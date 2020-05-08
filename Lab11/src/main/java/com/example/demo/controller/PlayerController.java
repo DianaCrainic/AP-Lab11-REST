@@ -8,6 +8,13 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * PlayerController: a REST controller containing methods for:
+ * obtaining the list of the players, via a HTTP GET request.
+ * adding a new player in the database, via a HTTP POST request.
+ * modifying the name of a player, via a HTTP PUT request.
+ * deleting a player, via a HTTP DELETE request.
+ */
 @RestController
 @RequestMapping("players")
 public class PlayerController {
