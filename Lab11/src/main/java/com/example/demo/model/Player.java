@@ -2,20 +2,31 @@ package com.example.demo.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 /**
  * Player class: contains information about a player
  */
 @Getter
 @Setter
+@NoArgsConstructor
 @AllArgsConstructor
+@Entity
+@Table(name= "players")
 public class Player {
-    private int id;
-    private String name;
-    private int game_id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer id;
 
-    public Player(int id, String name) {
+    @NotNull
+    private String name;
+    private Integer game_id;
+
+    public Player(Integer id, String name) {
         this.id = id;
         this.name = name;
     }
